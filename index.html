@@ -13,46 +13,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 
-<script type="text/javascript">
-var evtSource;
-function setupEventSource() {
-    evtSource = new EventSource("subscribe"); 
-	evtSource.onmessage = function (e) {
-		e.stopPropagation();
-		var el = document.querySelector('body');
-		var minHeight = el.scrollTop;
-		var maxHeight = window.innerHeight;
-		var middleHeight = (maxHeight + minHeight) / 2;
-		
-		console.log(minHeight, maxHeight);
-		var ek  = window.innerWidth;
-		console.log(window.innerWidth, window.innerHeight);
-		var elem = document.elementFromPoint(window.innerWidth/2, window.innerHeight/2);
-		var media  = elem.closest(".media");
-		
-		var rect = media.getBoundingClientRect();
-		console.log(rect.top, rect.bottom);
-		
-		
-		evtSource.onmessage =  function(){};
-		document.open('text/html');
-		document.write(e.data);
-		document.close();
-		
-		window.scrollTo(0, 500);
-	};
-    evtSource.onerror = function(e) {
-      evtSource.close();
-	  console.log("disconnect");
-      setupEventSource()
-    };
-}
-setupEventSource();
-/* window.requestAnimationFrame(function () { setupEventSource() });*/
-
-setupEventSource()
-</script>
-
   <style>
 	body {
 	  background-color: linen;
@@ -90,7 +50,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="cir.png">
+				  <img src="images/cir.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -114,7 +74,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="gardariki.png">
+				  <img src="images/gardariki.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -139,7 +99,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="annotatrix.png">
+				  <img src="images/annotatrix.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -161,7 +121,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="armory.png">
+				  <img src="images/armory.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -179,7 +139,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="helper.png">
+				  <img src="images/helper.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -201,7 +161,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="glosariusz.png">
+				  <img src="images/glosariusz.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -226,7 +186,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="folio.png">
+				  <img src="images/folio.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -266,7 +226,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="topos.png">
+				  <img src="images/topos.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -285,7 +245,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="vector.png">
+				  <img src="images/vector.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -305,7 +265,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="webtools.png">
+				  <img src="images/webtools.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -342,7 +302,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="predictability.png">
+				  <img src="images/predictability.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -363,7 +323,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="zjezd.png">
+				  <img src="images/zjezd.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -383,7 +343,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="aleph.png">
+				  <img src="images/aleph.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -402,7 +362,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="miasta.png">
+				  <img src="images/miasta.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -423,7 +383,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="115.png">
+				  <img src="images/115.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -441,7 +401,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="translit.png">
+				  <img src="images/translit.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -478,7 +438,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="mental.png">
+				  <img src="images/mental.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -500,7 +460,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="airbnb.png">
+				  <img src="images/airbnb.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -521,7 +481,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="phoenicia.png">
+				  <img src="images/phoenicia.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -540,7 +500,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="servers.png">
+				  <img src="images/servers.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -558,7 +518,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="golos.png">
+				  <img src="images/golos.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -576,7 +536,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="philosophy.png">
+				  <img src="images/philosophy.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -596,7 +556,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="stylo.png">
+				  <img src="images/stylo.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -616,7 +576,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="religions.png">
+				  <img src="images/religions.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -634,7 +594,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="mult.png">
+				  <img src="images/mult.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -651,7 +611,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="memo.png">
+				  <img src="images/memo.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -668,7 +628,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="jews.png">
+				  <img src="images/jews.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -686,7 +646,7 @@ setupEventSource()
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="paulinka.png">
+				  <img src="images/paulinka.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
