@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^robots.txt$ - [F,L]
+RewriteRule ^wiki$ - [F,L]

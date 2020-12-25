@@ -1,0 +1,158 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Russian TV News of February 27, 2016",
+			"fontSize": 24,
+			"font": "open sans"
+		},
+		"subtitle": {
+			"text": "The main news which were broadcasted on 17 mil square kms for more than 143 mil people",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "open sans"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"text": "infographics by Alyaxey Yaskevich",
+		"color": "#999999",
+		"fontSize": 10,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasWidth": 590,
+		"pieOuterRadius": "64%"
+	},
+	"data": {
+		"content": [
+			{
+				"label": "Hit-and-run driver",
+				"value": 300,
+				"color": "#cd29eb"
+			},
+			{
+				"label": "Syria",
+				"value": 240,
+				"color": "#050505"
+			},
+			{
+				"label": "Syria",
+				"value": 210,
+				"color": "#020202"
+			},
+			{
+				"label": "Syria",
+				"value": 30,
+				"color": "#080808"
+			},
+			{
+				"label": "Syria",
+				"value": 17,
+				"color": "#000000"
+			},
+			{
+				"label": "Syria",
+				"value": 90,
+				"color": "#010101"
+			},
+			{
+				"label": "Syria",
+				"value": 270,
+				"color": "#050505"
+			},
+			{
+				"label": "Accident in the mine Severnaya",
+				"value": 30,
+				"color": "#cb2121"
+			},
+			{
+				"label": "Nemtsov murder anniversary",
+				"value": 40,
+				"color": "#de2029"
+			},
+			{
+				"label": "Murder of children in the US",
+				"value": 150,
+				"color": "#8da595"
+			},
+			{
+				"label": "March of the right in Poland",
+				"value": 270,
+				"color": "#3ac228"
+			},
+			{
+				"label": "Holiday of Special Forces",
+				"value": 240,
+				"color": "#e8ed00"
+			},
+			{
+				"label": "Asphalting in Moscow",
+				"value": 30,
+				"color": "#e47d11"
+			},
+			{
+				"label": "Milan Fashion Week",
+				"value": 240,
+				"color": "#0b6197"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"format": "none",
+			"hideWhenLessThanPercentage": 3
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"tooltips": {
+		"enabled": true,
+		"type": "placeholder",
+		"string": "{label}: {value} sec, {percentage}%"
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "back",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 100
+		}
+	}
+});
+</script>
+
+</body>
+</html>
