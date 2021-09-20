@@ -42,6 +42,9 @@
 		}
 	}
 	*/
+	.image{
+		border: .5px solid silver;
+	}
 
 </style>
 </head>
@@ -55,7 +58,57 @@
 			<article class="media">
 			  <figure class="media-left">
 				<p class="image is-64x64">
-				  <img src="https://bulma.io/images/placeholders/128x128.png">
+				  <img src="images/runa.png">
+				</p>
+			  </figure>
+			  <div class="media-content">
+				<div class="content">
+				  <p>
+					<strong>
+							Runa
+					</strong>
+					<small>2021</small>
+					<span class="tag is-warning">NodeJS</span>
+					<span class="tag is-warning">VueJS</span>
+					<span class="tag is-warning">PostgreSQL</span>
+					<span class="tag is-warning">Primevue</span>
+					<span class="tag is-warning">D3.js</span>
+					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;runa" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+					<br>
+					Experimental prototype of the new user interface and API of the National Corpus of Russian Language funded in terms of Corpus2.0 project.
+				  </p>
+				</div>
+			  </div>
+			</article>			
+			<article class="media">
+			  <figure class="media-left">
+				<p class="image is-64x64">
+				  <img src="images/persona.png">
+				</p>
+			  </figure>
+			  <div class="media-content">
+				<div class="content">
+				  <p>
+					<strong>
+							Persona
+					</strong>
+					<small>Feb 2021 – Jun 2021</small>
+					<span class="tag is-warning">NodeJS</span>
+					<span class="tag is-warning">ExpressJS</span>
+					<span class="tag is-warning">VueJS</span>
+					<span class="tag is-warning">PostgreSQL</span>
+					<span class="tag is-warning">ElementPlus</span>
+					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;persona" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+					<br>
+					Web application for gathering and presenting data about life events of creative persons. This project was developed for research group of history of literature scholars working on the study of the oeuvre of Boris Pasternak.
+				  </p>
+				</div>
+			  </div>
+			</article>			
+			<article class="media">
+			  <figure class="media-left">
+				<p class="image is-64x64">
+				  <img src="images/pragmaticon.png">
 				</p>
 			  </figure>
 			  <div class="media-content">
@@ -64,14 +117,14 @@
 					<strong>
 							<a href="https:&#x2F;&#x2F;pragmaticon.ruscorpora.ru" target="_blank">Pragmaticon</a>
 					</strong>
-					<small> Dec 2020–Jan 2021</small>
+					<small>Dec 2020 – Jan 2021</small>
 					<span class="tag is-warning">NodeJS</span>
 					<span class="tag is-warning">VueJS</span>
 					<span class="tag is-warning">PostgreSQL</span>
 					<span class="tag is-warning">Primevue</span>
 					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;pragmaticon" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
 					<br>
-					The database of Russian Discourse Formulas, the project of the School of Linguistics of the NRU HSE. I processed the data from sophisticated CSV source with different types of microannotation, put it into PostgreSQL database and built the interface with Vue 3 (Composition API) and Primevue UI framework. It is my first experience with a reactive library for JavaScript
+					The database of Russian Discourse Formulas, It is a project of the School of Linguistics of the NRU HSE funded in terms of Corpus2.0 project. I processed the data from sophisticated CSV source with different types of microannotation, put it into PostgreSQL database and built the interface with Vue 3 (Composition API) and Primevue UI components library. It was my first experience with  JavaScript reactive framework.
 				  </p>
 				</div>
 			  </div>
@@ -97,8 +150,9 @@
 					<span class="tag is-warning">Google API</span>
 					<span class="tag is-warning">SCSS</span>
 					<span class="tag is-warning">Bulma</span>
+					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;epigraphy" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
 					<br>
-					Project is not yet open to wide audience. This is ambitious DH platform for historians and archeologists related to Russian History. The most of the work on bootstraping the development was importing <strong>structured</strong> data from different sources (Google Spreadsheets and Microsoft Word files) into a database. After that, I built an UI to access the content.
+					This is ambitious DH platform for historians and archeologists related to Russian History. The most of the work on bootstraping the development was importing <strong>structured</strong> data from different sources (Google Spreadsheets and Microsoft Word files) into a database. After that, I built an UI to access the content.
 				  </p>
 				</div>
 			  </div>
@@ -151,7 +205,7 @@
 					<span class="tag is-warning">SQLite</span>
 					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;ud-annotatrix" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
 					<br>
-					The web tool for annotation of syntactic corpora. I implemented Github API interaction (storing data in users repositories), cleaned UI and fixed a number of bugs. While added logging feature, I implemented new function in pinojs logger (PR)
+					The web tool for annotation of syntactic corpora. I implemented Github API interaction (storing data in users repositories), cleaned UI and fixed a number of bugs. While adding logging feature, I implemented new function in pinojs logger (PR)
 				  </p>
 				</div>
 			  </div>
@@ -197,7 +251,7 @@
 					<span class="tag is-warning">SQLite</span>
 					<span class="tag is-warning">Materialize.CSS</span>
 					<br>
-					Reference Database on places which are mentioned in archival documents and official registries and are related to the territory of modern Republic of Belarus. The web-service is intended to provide initial data to people who are going to look for historical stuff about their relatives in local archives
+					Reference Database on places which are mentioned in archival documents and official registries and are related to the territory of modern Republic of Belarus. The web-service is intended to provide initial data to people who are going to look for historical stuff about their relatives in local archives.
 				  </p>
 				</div>
 			  </div>
@@ -240,13 +294,14 @@
 				<div class="content">
 				  <p>
 					<strong>
-							<a href="#" target="_blank">Folio</a>
+							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;" target="_blank">Folio</a>
 					</strong>
 					<small>Oct 2020</small>
 					<span class="tag is-warning">Mustache.js</span>
 					<span class="tag is-warning">NodeJS</span>
 					<span class="tag is-warning">Express.js</span>
 					<span class="tag is-warning">Bulma</span>
+					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;persona" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
 					<br>
 					This is a page generator which built the page <strong>you</strong> are observing now. It is compiled from JSON via <i>Mustache.js</i> template rendering engine. You can have the page about <strong>your projects</strong> like this, you need only <strong>fill</strong> JSON structure with <strong>your data</strong>
 				  </p>
@@ -752,12 +807,12 @@
 				<div class="content">
 				  <p>
 					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;memorial&#x2F;" target="_blank">memoid 2018 </a>
+							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;memorial&#x2F;" target="_blank">Moscow Memorials of Soviet Repressions</a>
 					</strong>
 					<small>Sept 2018</small>
 					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;memorial" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
 					<br>
-					sdf maps of Lviv
+					Mashups for Memoid 2018 Hackathon
 				  </p>
 				</div>
 			  </div>
