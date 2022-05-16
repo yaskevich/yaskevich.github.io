@@ -8,887 +8,914 @@
   <meta name="author" content="Alyaxey Yaskevich">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-
-						
-						
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
 
   <style>
-	body {
-	  background-color: linen;
-	}
-	.topic {
-	  margin-top: 1rem;
-	}
-	.git {
-		width: 1rem;
-		vertical-align: middle;
-		animation-name: recolor;
-		animation-duration: 10s;
-		animation-iteration-count: infinite;
-	}
-	.git:hover{
-	filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);		
-	}
-	/*
-	@keyframes recolor {		
-		to{
-		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);		
-		}
-	}
-	*/
-	.image{
-		border: .5px solid silver;
-	}
-
-</style>
+    body {
+      background-color: linen;
+      padding: 30px 0px;
+    }
+    .topic {
+      margin-top: 1rem;
+    }
+    .git {
+      width: 1rem;
+      vertical-align: middle;
+      animation-name: recolor;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    .git:hover{
+      filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);    
+    }
+    /*
+    @keyframes recolor {    
+      to{
+      filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);    
+      }
+    }
+    */
+    .image{
+      border: .5px solid silver;
+    }
+    .hovered {
+      transition: all .2s ease-in-out;
+    }
+    .hovered:hover {
+      transform: scale(7) translateX(40%);
+      position: relative;
+      z-index: 1000;
+    }
+  </style>
 </head>
 
 <body>
   <!-- <script src="js/scripts.js"></script> -->
   <div class="container box">
-  <h1 class="title">Digital Projects by  Alyaxey Yaskevich</h1>
-		<div class="topic">
-		<h2 class="subtitle">Real Projects</h2>
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/elemental.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							Elemental
-					</strong>
-					<small>Jan–Feb 2018, Feb–May 2020, Nov–Dec 2021</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">Express.js</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">mini.css</span>
-					<span class="tag is-warning">VueJS</span>
-					<span class="tag is-warning">PostgreSQL</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;elemental" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					<strong>WIP</strong>. The tool which quickens manual annotation of corpora. The idea behind it was to made UI that allows to tag maximum of tokens with minimum of clicks. It still lacks interface to load text data into the database (by now, it is implemented via script). So it is not a ready-to-use app. However, I fully annotated with it a text of 10k tokens and the text commenting project uses it now. The prototype was written in JQuery and SQLite and now the app is being rewritten into Vue3 and PostgreSQL.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/runa.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							Runa
-					</strong>
-					<small>April – October 2021</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">VueJS</span>
-					<span class="tag is-warning">PostgreSQL</span>
-					<span class="tag is-warning">Primevue</span>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;runa" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Experimental prototype of the new user interface and API of the National Corpus of Russian Language funded in terms of Corpus2.0 project.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/persona.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							Persona
-					</strong>
-					<small>Feb 2021 – Jun 2021</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">ExpressJS</span>
-					<span class="tag is-warning">VueJS</span>
-					<span class="tag is-warning">PostgreSQL</span>
-					<span class="tag is-warning">ElementPlus</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;persona" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Web application for gathering and presenting data about life events of creative persons. This project was developed for research group of history of literature scholars working on the study of the oeuvre of Boris Pasternak.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/pragmaticon.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;pragmaticon.ruscorpora.ru" target="_blank">Pragmaticon</a>
-					</strong>
-					<small>Dec 2020 – Jan 2021</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">VueJS</span>
-					<span class="tag is-warning">PostgreSQL</span>
-					<span class="tag is-warning">Primevue</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;pragmaticon" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					The database of Russian Discourse Formulas, It is a project of the School of Linguistics of the NRU HSE funded in terms of Corpus2.0 project. I processed the data from sophisticated CSV source with different types of microannotation, put it into PostgreSQL database and built the interface with Vue 3 (Composition API) and Primevue UI components library. It was my first experience with  JavaScript reactive framework.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/cir.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							Corpus of Russian inscriptions
-					</strong>
-					<small>2020</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">ExpressJS</span>
-					<span class="tag is-warning">Perl</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">SQLite</span>
-					<span class="tag is-warning">Google API</span>
-					<span class="tag is-warning">SCSS</span>
-					<span class="tag is-warning">Bulma</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;epigraphy" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					This is ambitious DH platform for historians and archeologists related to Russian History. The most of the work on bootstraping the development was importing <strong>structured</strong> data from different sources (Google Spreadsheets and Microsoft Word files) into a database. After that, I built an UI to access the content.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/gardariki.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;gardariki.by&#x2F;map" target="_blank">Gardariki</a>
-					</strong>
-					<small>2019</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">ExpressJS</span>
-					<span class="tag is-warning">Strapi</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">Leaflet</span>
-					<span class="tag is-warning">PostgreSQL</span>
-					<span class="tag is-warning">Wikipedia API</span>
-					<span class="tag is-warning">OpenStreetMap</span>
-					<span class="tag is-warning">Materialize.CSS</span>
-					<br>
-					The guide on Belarusian cities which were granted with the privillege to self-govern by Magdeburg Law. The developemnet was started in September of 2019 and completed in February 2020. My tasks were project design, backend and map development, data processing and management of filling up the data base via UI by specialists. The landing pages (root pages of the project – both for Belarusian and English), castle icon representing a city on a map, and content were provided by other participants.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/annotatrix.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;annotatrix.philology.by&#x2F;" target="_blank">Annotatrix [bug fixes, feature implementation]</a>
-					</strong>
-					<small>2019</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">Github API</span>
-					<span class="tag is-warning">Bootstrap</span>
-					<span class="tag is-warning">Gulp</span>
-					<span class="tag is-warning">SQLite</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;ud-annotatrix" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					The web tool for annotation of syntactic corpora. I implemented Github API interaction (storing data in users repositories), cleaned UI and fixed a number of bugs. While adding logging feature, I implemented new function in pinojs logger (PR)
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/armory.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;armory.archonline.by&#x2F;" target="_blank">The Heraldry of the Republic of Belarus</a>
-					</strong>
-					<small>2017</small>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">Isotope</span>
-					<br>
-					The web-service contains information about flags and coats of arms of Belarusian cities and administrative units. It is <strong>official</strong> publication of this dataset, provided by the Ministry of Justice. CSV sources were processed with Perl and converted into JSON
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/helper.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;helper.philology.by&#x2F;" target="_blank">Belarusian Settlements of 18–21st centuries</a>
-					</strong>
-					<small>2016</small>
-					<span class="tag is-warning">Perl</span>
-					<span class="tag is-warning">Grunt</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">Leaflet</span>
-					<span class="tag is-warning">SQLite</span>
-					<span class="tag is-warning">Materialize.CSS</span>
-					<br>
-					Reference Database on places which are mentioned in archival documents and official registries and are related to the territory of modern Republic of Belarus. The web-service is intended to provide initial data to people who are going to look for historical stuff about their relatives in local archives.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/glosariusz.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;glosariusz.philology.by&#x2F;" target="_blank">Old Polish Glossary</a>
-					</strong>
-					<small>2016</small>
-					<span class="tag is-warning">Perl</span>
-					<span class="tag is-warning">RegExp</span>
-					<span class="tag is-warning">SQLite</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">PureCSS</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;glosariusz" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Learner’s Etymological Dictionary of Old Polish language. The main task was the processing of garbled PDF file which was only electronic source of the data. After that was completed, I built minimal web UI to allow users to access the content. In November 2020 I rewrote backend code, replacing Perl with <span class='tag is-warning'>NodeJS</span> (to unify deployment processes on my servers).
-				  </p>
-				</div>
-			  </div>
-			</article>			
-		</div>
-		<div class="topic">
-		<h2 class="subtitle">Toy Projects</h2>
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="https://bulma.io/images/placeholders/128x128.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;microtop.philology.by&#x2F;" target="_blank">Microtop</a>
-					</strong>
-					<small>Jan 2022</small>
-					<span class="tag is-warning">Primevue</span>
-					<span class="tag is-warning">VueJS</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;microtop" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					The lightweight UI for the bibliography of Belarusian microtoponymy (names of local landmarks). The data were collected by Vadzim Shkliaryk.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/folio.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;" target="_blank">Folio</a>
-					</strong>
-					<small>Oct 2020</small>
-					<span class="tag is-warning">Mustache.js</span>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">Express.js</span>
-					<span class="tag is-warning">Bulma</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;persona" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					This is a page generator which built the page <strong>you</strong> are observing now. It is compiled from JSON via <i>Mustache.js</i> template rendering engine. You can have the page about <strong>your projects</strong> like this, you need only <strong>fill</strong> JSON structure with <strong>your data</strong>
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/topos.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;topos.philology.by&#x2F;" target="_blank">Topos</a>
-					</strong>
-					<small>2015</small>
-					<span class="tag is-warning">Perl</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">D3.js</span>
-					<br>
-					My project of research of Belarusian place names (toponymy). It was my project in terms of the course in infographics and data visualization conductued by Vadim Shmygov
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/vector.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;vector.philology.by&#x2F;" target="_blank">Vectores.js</a>
-					</strong>
-					<small>2018</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">Express.js</span>
-					<span class="tag is-warning">JQuery</span>
-					<br>
-					The big project on visualization of semantic vector models. It includes Python module, lightweight browser UI, and Python backend server that provides API to access models.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/webtools.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;tools.philology.by&#x2F;" target="_blank">Philology.BY toolset for character encoding</a>
-					</strong>
-					<small>Nov 2018</small>
-					<span class="tag is-warning">NodeJS</span>
-					<span class="tag is-warning">Express.js</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">mini.css</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;webtools" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Language-related web tools which are could be of use for a linguist: Belarusian and Russian Romanization for Academic Use, as well as Unicode character info
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="https://bulma.io/images/placeholders/128x128.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;projects.yaskevich.com&#x2F;lviv&#x2F;" target="_blank">Lviv</a>
-					</strong>
-					<small></small>
-					<br>
-					Mashup with Interactive maps of old Ukrainian city Lviv
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/predictability.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;predictability&#x2F;" target="_blank">Predictability</a>
-					</strong>
-					<small>Apr 2020</small>
-					<span class="tag is-warning">Mustache.js</span>
-					<span class="tag is-warning">mini.css</span>
-					<span class="tag is-warning">D3.js</span>
-					<span class="tag is-warning">JQuery</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;predictability&#x2F;" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Landing page for research project comparing predictions made by language models and real humans. It shows animated chart and provides ability to customize downloaded dataset
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/zjezd.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;zjezd.philology.by&#x2F;" target="_blank">International Congress of Slavists</a>
-					</strong>
-					<small>Aug 2013</small>
-					<span class="tag is-warning">Perl</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">JQuery UI</span>
-					<span class="tag is-warning">SQLite</span>
-					<br>
-					Program of the Congress that took place in Minsk, in 2013. The content was extracted from Microsoft Word file (doc) and put into SQLite database, then I built simple UI
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/aleph.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;aleph.yaskevich.com&#x2F;" target="_blank">Aleph</a>
-					</strong>
-					<small>2016</small>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">PureCSS</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;aleph" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					App to train your skills in reading characters of different alphabethes. Usually, knowledge of the writing system is one of the strongest barriers to learn a language, especially is an alphabeth is very different from one of your native language.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/miasta.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;miasta.philology.by&#x2F;" target="_blank">Cities of Poland</a>
-					</strong>
-					<small>Jun 2017</small>
-					<span class="tag is-warning">Perl</span>
-					<span class="tag is-warning">JQuery</span>
-					<span class="tag is-warning">Leaflet</span>
-					<span class="tag is-warning">SQLite</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;miasta" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Simple web-tool for quick search for patterns in place names of Polish cities and villages. Data were extracted from OpenStreetMap database (by May 29, 2017). In November 2020 I rewrote backend code, replacing Perl with <span class='tag is-warning'>NodeJS</span> (to unify deployment processes on my servers).
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/115.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;115&#x2F;" target="_blank">115BEL</a>
-					</strong>
-					<small>May 2017</small>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;115" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Made at the Open Data Lab event (May 20th, 2017). Analysis of distribution of issues opened on 115BEL web-service (municipal service monitoring): addresses of the issues were classified by a city district.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/translit.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;translit&#x2F;" target="_blank">Keyboard Transliteration</a>
-					</strong>
-					<small>2009</small>
-					<span class="tag is-warning">Vanilla JS</span>
-					<span class="tag is-warning">Sen CSS</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;translit" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					On-the-fly translation of key pressings of Russian keyboard layout to their corresponding Belarusian letters. Perhaps, the oldest project of ones worth to be published here.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="https://bulma.io/images/placeholders/128x128.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							Milavitsa
-					</strong>
-					<small>2009</small>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;milavitsa" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Visualisation of the origins of songs and dances from the repertoire of authentic folklore collective “Milavitsa”.
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="https://bulma.io/images/placeholders/128x128.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;greenmap&#x2F;" target="_blank">GreenMap</a>
-					</strong>
-					<small>April-July 2017</small>
-					<span class="tag is-warning">Leaflet.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;greenmap" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Importing GreenMap data from weird homemade key value storage built-in into online shop CMS
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/mental.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;mental-distance&#x2F;" target="_blank">Mental distance: places and time</a>
-					</strong>
-					<small>Oct 2017</small>
-					<span class="tag is-warning">Leaflet.js</span>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;mental-distance" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Cosine distance between tokens of place names from National Corpus of Russian Language changing with time. There are 3 visualizations based on the project data: <a href='https://yaskevich.github.io/mental-distance/' target='_blank'>light graph (7 cities)</a>, <a href='https://yaskevich.github.io/mental-distance/graph/' target='_blank'>full graph (top-25 cities)</a>, <a href='https://yaskevich.github.io/mental-distance/map/' target='_blank'>map of georeferenced places that were caught in models (400+ places)</a>
-				  </p>
-				</div>
-			  </div>
-			</article>			
-		</div>
-		<div class="topic">
-		<h2 class="subtitle">Visualizations&#x2F;Maps</h2>
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/airbnb.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;airbnb&#x2F;" target="_blank">Airbnb Moscow</a>
-					</strong>
-					<small>Apr 2019</small>
-					<span class="tag is-warning">D3.js</span>
-					<span class="tag is-warning">Turf.js</span>
-					<span class="tag is-warning">Leaflet</span>
-					<span class="tag is-warning">NodeJS</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;airbnb&#x2F;" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					My part of work in the team that dealt with logistics issues of Moscow infrastructure, at the <a href='https://www.facebook.com/events/297552581137134/'>Hackathon on Digital Humanities and Data Journalism</a>, Moscow (April 27, 2019)
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/phoenicia.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;phoenicia&#x2F;" target="_blank">Phoenicia</a>
-					</strong>
-					<small>Jan 2018</small>
-					<span class="tag is-warning">Leaflet</span>
-					<span class="tag is-warning">QGIS</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;phoenicia&#x2F;" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					For my collegue who teaches Phoenician and other ancient Semitic stuff
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/servers.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;phoenicia&#x2F;" target="_blank">ByNet Servers</a>
-					</strong>
-					<small>Dec 2016</small>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;phoenicia&#x2F;" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Simple clusterization visualization made with minimal data processing effort at first <a href='http://www.park.by/post-1340/'>AI Hackathon</a> in Minsk, High Tech Park (17-18.12.2016). It shows distribution of web servers (as applications) that were deployed in Belarusian segment of Internet (i.e. national domain zone <strong>BY</strong>)
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/golos.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;golos&#x2F;" target="_blank">Golos Followers</a>
-					</strong>
-					<small>Sep 2017</small>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;golos" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Network of followers and following ones of one user of social blockchain-based platform <a href='https://golos.io/'>Golos.io</a>, visualized at <a href='https://tech.onliner.by/2017/09/11/blockchain-5'>Imaguru Blockchain Hackathon</a> (8–10.9.2017)
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/philosophy.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;philosophy&#x2F;" target="_blank">Ancient Philosophy </a>
-					</strong>
-					<small>Feb 2019</small>
-					<span class="tag is-warning">Leaflet</span>
-					<span class="tag is-warning">SPARQL</span>
-					<span class="tag is-warning">Wikipedia API</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;philosophy" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Map the data were retrieved from Wikidata via SPARQL query &copy; <a href='http://commons.pelagios.org/'>Pelagios commons</a>: <a href='https://dh.gu.se/dare/'>Digital Atlas of the Roman Empire</a> | Source: <a href='https://www.wikidata.org/'>Wikidata</a>
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/stylo.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;sx.by&#x2F;" target="_blank">Stylometry of Belarusian Literature</a>
-					</strong>
-					<small>Aug 2014</small>
-					<span class="tag is-warning">SVG</span>
-					<span class="tag is-warning">Gephi</span>
-					<span class="tag is-warning">Adobe Illustrator</span>
-					<span class="tag is-warning">R</span>
-					<br>
-					My results of the workshop on stylometry
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/religions.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;lviv-religions&#x2F;" target="_blank">Religions in Lviv before the World War II</a>
-					</strong>
-					<small>Aug 2017</small>
-					<span class="tag is-warning">D3.js</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;lviv-religions" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Statistics of religions in Lviv (Ukraine) from 1880 to 1939. Interactive visulization for group project on summer school
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/mult.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;multiplication&#x2F;" target="_blank">Graph of Multiplication to Ten</a>
-					</strong>
-					<small>Oct 2016</small>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;multiplication&#x2F;" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Interactive illustration of learning trajectory of multiplication table
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/memo.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;memorial&#x2F;" target="_blank">Moscow Memorials of Soviet Repressions</a>
-					</strong>
-					<small>Sept 2018</small>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;memorial" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Mashups for Memoid 2018 Hackathon
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/jews.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;jews" target="_blank">Belarusian Jews, 19th century</a>
-					</strong>
-					<small></small>
-					<span class="tag is-warning">Leaflet</span>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;jews" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Jewish settlements on Belarusian lands in the end of 19th century
-				  </p>
-				</div>
-			  </div>
-			</article>			
-			<article class="media">
-			  <figure class="media-left">
-				<p class="image is-64x64">
-				  <img src="images/paulinka.png">
-				</p>
-			  </figure>
-			  <div class="media-content">
-				<div class="content">
-				  <p>
-					<strong>
-							<a href="https:&#x2F;&#x2F;yaskevich.github.io&#x2F;paulinka&#x2F;" target="_blank">Paulinka</a>
-					</strong>
-					<small></small>
-					<a href="https:&#x2F;&#x2F;github.com&#x2F;yaskevich&#x2F;paulinka" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
-					<br>
-					Simple visualization of play “Paulinka” written by Janka Kupala in 1912
-				  </p>
-				</div>
-			  </div>
-			</article>			
-		</div>
+  <h1 class="title">Digital Projects by Alyaxey Yaskevich</h1>
+    <div class="topic">
+    <h2 class="subtitle">Real Projects</h2>
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/elemental.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              Elemental
+          </strong>
+          <small>Jan–Feb 2018, Feb–May 2020, Nov–Dec 2021, 2022</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">Express.js</span>
+          <span class="tag is-warning">VueJS</span>
+          <span class="tag is-warning">PostgreSQL</span>
+          <span class="tag is-warning">NaiveUI</span>
+          <a href="https://github.com/yaskevich/elemental" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          <strong>WIP</strong>. Corpus Annotation Tool. The idea behind it was to made UI that allows to tag maximum of tokens with minimum of clicks. It still lacks interface to load text data into the database (by now, it is implemented via script). So it is not a ready-to-use app. However, I fully annotated with it a text of 10k tokens and the text commenting project uses it now. The prototype was written in JQuery and SQLite and now the app is being rewritten into Vue3 and PostgreSQL.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/runa.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              Runa
+          </strong>
+          <small>April – October 2021</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">VueJS</span>
+          <span class="tag is-warning">PostgreSQL</span>
+          <span class="tag is-warning">Primevue</span>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/runa" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Experimental prototype of the new user interface and API of the National Corpus of Russian Language funded in terms of Corpus2.0 project.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/persona.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              Persona
+          </strong>
+          <small>Feb 2021 – Jun 2021</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">ExpressJS</span>
+          <span class="tag is-warning">VueJS</span>
+          <span class="tag is-warning">PostgreSQL</span>
+          <span class="tag is-warning">ElementPlus</span>
+          <a href="https://github.com/yaskevich/persona" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Web application for gathering and presenting data about life events of creative persons. This project was developed for research group of history of literature scholars working on the study of the oeuvre of Boris Pasternak.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/pragmaticon.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://pragmaticon.ruscorpora.ru" target="_blank">Pragmaticon</a>
+          </strong>
+          <small>Dec 2020 – Jan 2021</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">VueJS</span>
+          <span class="tag is-warning">PostgreSQL</span>
+          <span class="tag is-warning">Primevue</span>
+          <a href="https://github.com/yaskevich/pragmaticon" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          The database of Russian Discourse Formulas, It is a project of the School of Linguistics of the NRU HSE funded in terms of Corpus2.0 project. I processed the data from sophisticated CSV source with different types of microannotation, put it into PostgreSQL database and built the interface with Vue 3 (Composition API) and Primevue UI components library. It was my first experience with  JavaScript reactive framework.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/cir.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              Corpus of Russian inscriptions
+          </strong>
+          <small>2020</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">ExpressJS</span>
+          <span class="tag is-warning">Perl</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">SQLite</span>
+          <span class="tag is-warning">Google API</span>
+          <span class="tag is-warning">SCSS</span>
+          <span class="tag is-warning">Bulma</span>
+          <a href="https://github.com/yaskevich/epigraphy" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          This is ambitious DH platform for historians and archeologists related to Russian History. The most of the work on bootstraping the development was importing <strong>structured</strong> data from different sources (Google Spreadsheets and Microsoft Word files) into a database. After that, I built an UI to access the content.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/gardariki.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://gardariki.by/map" target="_blank">Gardariki</a>
+          </strong>
+          <small>2019</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">ExpressJS</span>
+          <span class="tag is-warning">Strapi</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">Leaflet</span>
+          <span class="tag is-warning">PostgreSQL</span>
+          <span class="tag is-warning">Wikipedia API</span>
+          <span class="tag is-warning">OpenStreetMap</span>
+          <span class="tag is-warning">Materialize.CSS</span>
+          <br>
+          The guide on Belarusian cities which were granted with the privillege to self-govern by Magdeburg Law. The developemnet was started in September of 2019 and completed in February 2020. My tasks were project design, backend and map development, data processing and management of filling up the data base via UI by specialists. The landing pages (root pages of the project – both for Belarusian and English), castle icon representing a city on a map, and content were provided by other participants.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/annotatrix.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://annotatrix.philology.by/" target="_blank">Annotatrix [bug fixes, feature implementation]</a>
+          </strong>
+          <small>2019</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">Github API</span>
+          <span class="tag is-warning">Bootstrap</span>
+          <span class="tag is-warning">Gulp</span>
+          <span class="tag is-warning">SQLite</span>
+          <a href="https://github.com/yaskevich/ud-annotatrix" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          The web tool for annotation of syntactic corpora. I implemented Github API interaction (storing data in users repositories), cleaned UI and fixed a number of bugs. While adding logging feature, I implemented new function in pinojs logger (PR)
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/armory.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://armory.archonline.by/" target="_blank">The Heraldry of the Republic of Belarus</a>
+          </strong>
+          <small>2017</small>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">Isotope</span>
+          <br>
+          The web-service contains information about flags and coats of arms of Belarusian cities and administrative units. It is <strong>official</strong> publication of this dataset, provided by the Ministry of Justice. CSV sources were processed with Perl and converted into JSON
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/helper.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://helper.philology.by/" target="_blank">Belarusian Settlements of 18–21st centuries</a>
+          </strong>
+          <small>2016</small>
+          <span class="tag is-warning">Perl</span>
+          <span class="tag is-warning">Grunt</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">Leaflet</span>
+          <span class="tag is-warning">SQLite</span>
+          <span class="tag is-warning">Materialize.CSS</span>
+          <br>
+          Reference Database on places which are mentioned in archival documents and official registries and are related to the territory of modern Republic of Belarus. The web-service is intended to provide initial data to people who are going to look for historical stuff about their relatives in local archives.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/glosariusz.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://glosariusz.philology.by/" target="_blank">Old Polish Glossary</a>
+          </strong>
+          <small>2016</small>
+          <span class="tag is-warning">Perl</span>
+          <span class="tag is-warning">RegExp</span>
+          <span class="tag is-warning">SQLite</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">PureCSS</span>
+          <a href="https://github.com/yaskevich/glosariusz" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Learner’s Etymological Dictionary of Old Polish language. The main task was the processing of garbled PDF file which was only electronic source of the data. After that was completed, I built minimal web UI to allow users to access the content. In November 2020 I rewrote backend code, replacing Perl with <span class='tag is-warning'>NodeJS</span> (to unify deployment processes on my servers).
+          </p>
+        </div>
+        </div>
+      </article>      
+    </div>
+    <div class="topic">
+    <h2 class="subtitle">Toy Projects</h2>
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/microtop.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://microtop.philology.by/" target="_blank">Microtop</a>
+          </strong>
+          <small>Jan 2022</small>
+          <span class="tag is-warning">Primevue</span>
+          <span class="tag is-warning">VueJS</span>
+          <a href="https://github.com/yaskevich/microtop" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          The lightweight UI for the bibliography of Belarusian microtoponymy (names of local landmarks). The data were collected by Vadzim Shkliaryk.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 ">
+          <img src="https://bulma.io/images/placeholders/128x128.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              Noto
+          </strong>
+          <small>Jan 2022</small>
+          <span class="tag is-warning">Primevue</span>
+          <span class="tag is-warning">VueJS</span>
+          <span class="tag is-warning">SQLite</span>
+          <a href="https://github.com/yaskevich/noto" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Just an app for taking notes
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/folio.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/" target="_blank">Folio</a>
+          </strong>
+          <small>Oct 2020</small>
+          <span class="tag is-warning">Mustache.js</span>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">Express.js</span>
+          <span class="tag is-warning">Bulma</span>
+          <a href="https://github.com/yaskevich/persona" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          This is a page generator which built the page <strong>you</strong> are observing now. It is compiled from JSON via <i>Mustache.js</i> template rendering engine. You can have the page about <strong>your projects</strong> like this, you need only <strong>fill</strong> JSON structure with <strong>your data</strong>
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/topos.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://topos.philology.by/" target="_blank">Topos</a>
+          </strong>
+          <small>2015</small>
+          <span class="tag is-warning">Perl</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">D3.js</span>
+          <br>
+          My project of research of Belarusian place names (toponymy). It was my project in terms of the course in infographics and data visualization conductued by Vadim Shmygov
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/vector.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://vector.philology.by/" target="_blank">Vectores.js</a>
+          </strong>
+          <small>2018</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">Express.js</span>
+          <span class="tag is-warning">JQuery</span>
+          <br>
+          The big project on visualization of semantic vector models. It includes Python module, lightweight browser UI, and Python backend server that provides API to access models.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/webtools.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://tools.philology.by/" target="_blank">Philology.BY toolset for character encoding</a>
+          </strong>
+          <small>Nov 2018</small>
+          <span class="tag is-warning">NodeJS</span>
+          <span class="tag is-warning">Express.js</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">mini.css</span>
+          <a href="https://github.com/yaskevich/webtools" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Language-related web tools which are could be of use for a linguist: Belarusian and Russian Romanization for Academic Use, as well as Unicode character info
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 ">
+          <img src="https://bulma.io/images/placeholders/128x128.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://projects.yaskevich.com/lviv/" target="_blank">Lviv</a>
+          </strong>
+          <small></small>
+          <br>
+          Mashup with Interactive maps of old Ukrainian city Lviv
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/predictability.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/predictability/" target="_blank">Predictability</a>
+          </strong>
+          <small>Apr 2020</small>
+          <span class="tag is-warning">Mustache.js</span>
+          <span class="tag is-warning">mini.css</span>
+          <span class="tag is-warning">D3.js</span>
+          <span class="tag is-warning">JQuery</span>
+          <a href="https://github.com/yaskevich/predictability/" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Landing page for research project comparing predictions made by language models and real humans. It shows animated chart and provides ability to customize downloaded dataset
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/zjezd.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://zjezd.philology.by/" target="_blank">International Congress of Slavists</a>
+          </strong>
+          <small>Aug 2013</small>
+          <span class="tag is-warning">Perl</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">JQuery UI</span>
+          <span class="tag is-warning">SQLite</span>
+          <br>
+          Program of the Congress that took place in Minsk, in 2013. The content was extracted from Microsoft Word file (doc) and put into SQLite database, then I built simple UI
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/aleph.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://aleph.yaskevich.com/" target="_blank">Aleph</a>
+          </strong>
+          <small>2016</small>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">PureCSS</span>
+          <a href="https://github.com/yaskevich/aleph" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          App to train your skills in reading characters of different alphabethes. Usually, knowledge of the writing system is one of the strongest barriers to learn a language, especially is an alphabeth is very different from one of your native language.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/miasta.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://miasta.philology.by/" target="_blank">Cities of Poland</a>
+          </strong>
+          <small>Jun 2017</small>
+          <span class="tag is-warning">Perl</span>
+          <span class="tag is-warning">JQuery</span>
+          <span class="tag is-warning">Leaflet</span>
+          <span class="tag is-warning">SQLite</span>
+          <a href="https://github.com/yaskevich/miasta" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Simple web-tool for quick search for patterns in place names of Polish cities and villages. Data were extracted from OpenStreetMap database (by May 29, 2017). In November 2020 I rewrote backend code, replacing Perl with <span class='tag is-warning'>NodeJS</span> (to unify deployment processes on my servers).
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/115.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/115/" target="_blank">115BEL</a>
+          </strong>
+          <small>May 2017</small>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/115" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Made at the Open Data Lab event (May 20th, 2017). Analysis of distribution of issues opened on 115BEL web-service (municipal service monitoring): addresses of the issues were classified by a city district.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/translit.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/translit/" target="_blank">Keyboard Transliteration</a>
+          </strong>
+          <small>2009</small>
+          <span class="tag is-warning">Vanilla JS</span>
+          <span class="tag is-warning">Sen CSS</span>
+          <a href="https://github.com/yaskevich/translit" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          On-the-fly translation of key pressings of Russian keyboard layout to their corresponding Belarusian letters. Perhaps, the oldest project of ones worth to be published here.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 ">
+          <img src="https://bulma.io/images/placeholders/128x128.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              Milavitsa
+          </strong>
+          <small>2009</small>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/milavitsa" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Visualisation of the origins of songs and dances from the repertoire of authentic folklore collective “Milavitsa”.
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 ">
+          <img src="https://bulma.io/images/placeholders/128x128.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/greenmap/" target="_blank">GreenMap</a>
+          </strong>
+          <small>April-July 2017</small>
+          <span class="tag is-warning">Leaflet.js</span>
+          <a href="https://github.com/yaskevich/greenmap" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Importing GreenMap data from weird homemade key value storage built-in into online shop CMS
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/mental.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/mental-distance/" target="_blank">Mental distance: places and time</a>
+          </strong>
+          <small>Oct 2017</small>
+          <span class="tag is-warning">Leaflet.js</span>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/mental-distance" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Cosine distance between tokens of place names from National Corpus of Russian Language changing with time. There are 3 visualizations based on the project data: <a href='https://yaskevich.github.io/mental-distance/' target='_blank'>light graph (7 cities)</a>, <a href='https://yaskevich.github.io/mental-distance/graph/' target='_blank'>full graph (top-25 cities)</a>, <a href='https://yaskevich.github.io/mental-distance/map/' target='_blank'>map of georeferenced places that were caught in models (400+ places)</a>
+          </p>
+        </div>
+        </div>
+      </article>      
+    </div>
+    <div class="topic">
+    <h2 class="subtitle">Visualizations&#x2F;Maps</h2>
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/airbnb.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/airbnb/" target="_blank">Airbnb Moscow</a>
+          </strong>
+          <small>Apr 2019</small>
+          <span class="tag is-warning">D3.js</span>
+          <span class="tag is-warning">Turf.js</span>
+          <span class="tag is-warning">Leaflet</span>
+          <span class="tag is-warning">NodeJS</span>
+          <a href="https://github.com/yaskevich/airbnb/" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          My part of work in the team that dealt with logistics issues of Moscow infrastructure, at the <a href='https://www.facebook.com/events/297552581137134/'>Hackathon on Digital Humanities and Data Journalism</a>, Moscow (April 27, 2019)
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/phoenicia.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/phoenicia/" target="_blank">Phoenicia</a>
+          </strong>
+          <small>Jan 2018</small>
+          <span class="tag is-warning">Leaflet</span>
+          <span class="tag is-warning">QGIS</span>
+          <a href="https://github.com/yaskevich/phoenicia/" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          For my collegue who teaches Phoenician and other ancient Semitic stuff
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/servers.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/phoenicia/" target="_blank">ByNet Servers</a>
+          </strong>
+          <small>Dec 2016</small>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/phoenicia/" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Simple clusterization visualization made with minimal data processing effort at first <a href='http://www.park.by/post-1340/'>AI Hackathon</a> in Minsk, High Tech Park (17-18.12.2016). It shows distribution of web servers (as applications) that were deployed in Belarusian segment of Internet (i.e. national domain zone <strong>BY</strong>)
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/golos.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/golos/" target="_blank">Golos Followers</a>
+          </strong>
+          <small>Sep 2017</small>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/golos" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Network of followers and following ones of one user of social blockchain-based platform <a href='https://golos.io/'>Golos.io</a>, visualized at <a href='https://tech.onliner.by/2017/09/11/blockchain-5'>Imaguru Blockchain Hackathon</a> (8–10.9.2017)
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/philosophy.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/philosophy/" target="_blank">Ancient Philosophy </a>
+          </strong>
+          <small>Feb 2019</small>
+          <span class="tag is-warning">Leaflet</span>
+          <span class="tag is-warning">SPARQL</span>
+          <span class="tag is-warning">Wikipedia API</span>
+          <a href="https://github.com/yaskevich/philosophy" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Map the data were retrieved from Wikidata via SPARQL query &copy; <a href='http://commons.pelagios.org/'>Pelagios commons</a>: <a href='https://dh.gu.se/dare/'>Digital Atlas of the Roman Empire</a> | Source: <a href='https://www.wikidata.org/'>Wikidata</a>
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/stylo.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://sx.by/" target="_blank">Stylometry of Belarusian Literature</a>
+          </strong>
+          <small>Aug 2014</small>
+          <span class="tag is-warning">SVG</span>
+          <span class="tag is-warning">Gephi</span>
+          <span class="tag is-warning">Adobe Illustrator</span>
+          <span class="tag is-warning">R</span>
+          <br>
+          My results of the workshop on stylometry
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/religions.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/lviv-religions/" target="_blank">Religions in Lviv before the World War II</a>
+          </strong>
+          <small>Aug 2017</small>
+          <span class="tag is-warning">D3.js</span>
+          <a href="https://github.com/yaskevich/lviv-religions" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Statistics of religions in Lviv (Ukraine) from 1880 to 1939. Interactive visulization for group project on summer school
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/mult.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/multiplication/" target="_blank">Graph of Multiplication to Ten</a>
+          </strong>
+          <small>Oct 2016</small>
+          <a href="https://github.com/yaskevich/multiplication/" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Interactive illustration of learning trajectory of multiplication table
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/memo.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/memorial/" target="_blank">Moscow Memorials of Soviet Repressions</a>
+          </strong>
+          <small>Sept 2018</small>
+          <a href="https://github.com/yaskevich/memorial" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Mashups for Memoid 2018 Hackathon
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/jews.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/jews" target="_blank">Belarusian Jews, 19th century</a>
+          </strong>
+          <small></small>
+          <span class="tag is-warning">Leaflet</span>
+          <a href="https://github.com/yaskevich/jews" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Jewish settlements on Belarusian lands in the end of 19th century
+          </p>
+        </div>
+        </div>
+      </article>      
+      <article class="media">
+        <figure class="media-left">
+        <p class="image is-64x64 hovered">
+          <img src="images/paulinka.png">
+        </p>
+        </figure>
+        <div class="media-content">
+        <div class="content">
+          <p>
+          <strong>
+              <a href="https://yaskevich.github.io/paulinka/" target="_blank">Paulinka</a>
+          </strong>
+          <small></small>
+          <a href="https://github.com/yaskevich/paulinka" target="_blank"><img src="images/Octicons-mark-github.svg" alt="Github link" class="git" title="Click to see the Github repository with code"></a>
+          <br>
+          Simple visualization of play “Paulinka” written by Janka Kupala in 1912
+          </p>
+        </div>
+        </div>
+      </article>      
+    </div>
   </div>
   
-  
-  
-  <div style="margin-top:50px;">
-  <a href="https:&#x2F;&#x2F;yaskevich.com&#x2F;">See more... →</a>
+  <div class="container box">
+    <p>
+      © 2022, <a href="https://yaskevich.com/" target="_blank">Alyaxey Yaskevich</a>
+    </p>
   </div>
+
 </body>
 </html>
